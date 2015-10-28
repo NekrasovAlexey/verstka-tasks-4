@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great);
+@import url(https://fonts.googleapis.com/css?family=Special+Elite);
+
+body {
+    overflow-x: hidden;
+}
+main {
+    position: relative;
+    margin: -60px -10px 0 -10px;
+    padding: 65px 10px 0 10px;
+    /*background: #ffeba9 url(http://hqstyles.com/uploads/posts/2012-02/thumbs/1329779290-94027-vintage-paper-patterns-pw-4.jpg) repeat;*/
+    background: #e7e1af;
+    -moz-column-count: 3;
+    -moz-column-rule: 3px solid #444;
+    -webkit-column-count: 3;
+    -webkit-column-rule: 3px solid #444;
+    column-count: 3;
+    column-rule: 3px solid #444;
+    color: #333;
+    font-family: 'Special Elite', cursive;
+    font-size: 20px;
+    text-align: justify;
+    z-index: -1;
+}
+
+header {
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    margin: 5px;
+}
+#paperHeader {
+    margin-bottom: 10px;
+    -webkit-column-span: all;
+    column-span: all;
+    text-align: center;
+    font-size: 40px;
+    border: 4px double #444;
+    border-right: none;
+    border-left: none;
+
+}
+
+#bright:checked ~ main {
+    color: #fff;
+    background: #000;
+}
+
+img {
+    width: 100%;
+    padding: 5px 0;
+    border-top: 2px solid #444;
+    border-bottom: 2px solid #444;
+}
+
+article:not(:first-of-type) {
+    border-top: 2px solid #444;
+}
+
+article {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
