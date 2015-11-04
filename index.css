@@ -1,10 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great);
 @import url(https://fonts.googleapis.com/css?family=Special+Elite);
 
-body {
+html
+{
+    height: 100%;
+}
+
+body
+{
+    height: 100%;
     overflow-x: hidden;
 }
-main {
+main
+{
     position: relative;
     margin: -60px -10px 0 -10px;
     padding: 65px 10px 0 10px;
@@ -23,12 +31,14 @@ main {
     z-index: -1;
 }
 
-header {
+header
+{
     font-family: 'Fredericka the Great', cursive;
     text-align: center;
     margin: 5px;
 }
-#paperHeader {
+main > header
+{
     margin-bottom: 10px;
     -webkit-column-span: all;
     column-span: all;
@@ -40,19 +50,14 @@ header {
 
 }
 
-#bright:checked ~ main {
-    color: #fff;
-    background: #000;
-}
-
 img {
     width: 100%;
     padding: 5px 0;
     border-top: 2px solid #444;
-    border-bottom: 2px solid #444;
 }
 
-article:not(:first-of-type) {
+article:not(:first-of-type)
+{
     border-top: 2px solid #444;
 }
 
@@ -61,4 +66,59 @@ article {
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
+}
+
+article > div
+{
+    text-align: center;
+    border-bottom: 2px solid #444;
+    margin-bottom: 5px;
+}
+
+p:first-of-type:first-letter
+{
+    font-family: 'Fredericka the Great', cursive;
+}
+
+article:last-child
+{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+article:last-child > header,
+article:last-child > div
+{
+    -webkit-column-span: all;
+    column-span: all;
+}
+
+blockquote
+{
+    padding: 5px;
+    border: 3px double #444;
+}
+
+blockquote > div
+{
+    text-align: right;
+}
+
+#bright:checked ~ main,
+#bright:checked ~ label
+{
+    color: #fff;
+    background: #000;
+}
+
+
+#fontSize:checked ~ main
+{
+    font-size: 200%;
+}
+
+#fontStyle:checked ~ main
+{
+    font-family: Times;
 }
