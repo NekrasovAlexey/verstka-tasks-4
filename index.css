@@ -52,9 +52,9 @@ main > header
 }
 
 img {
-    width: 100%;
+    display: inline-block;
+    width: 90%;
     padding: 5px 0;
-    border-top: 2px solid #444;
 }
 
 article:not(:first-of-type)
@@ -62,11 +62,20 @@ article:not(:first-of-type)
     border-top: 2px solid #444;
 }
 
+article span
+{
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 5px;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+}
+
 article > div
 {
-    text-align: center;
+    border-top: 2px solid #444;
     border-bottom: 2px solid #444;
-    margin-bottom: 5px;
 }
 
 p:first-of-type:first-letter
